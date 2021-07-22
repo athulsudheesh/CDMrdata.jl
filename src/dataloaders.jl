@@ -11,3 +11,6 @@ function load_data(dataset_name)
         return data 
     end
 end
+
+list_datasets() =show(stdout, "text/plain", readdir(DATA_DIR))
+
