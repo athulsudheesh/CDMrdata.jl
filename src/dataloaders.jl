@@ -1,7 +1,7 @@
 
 function load_data(dataset_name)
     rda = dataset_name * ".rda"
-    basename = joinpath(pathof(CDMrdata),"data")
+    basename = abspath(joinpath(@__DIR__,"..","data"))
     try 
         data = load(joinpath(basename,rda))[ "data." * dataset_name]
         return data 
