@@ -8,4 +8,4 @@ module CDMrdata
     const module_path = @__DIR__
         include("dataloaders.jl")
         export load_data
-    end
+end
