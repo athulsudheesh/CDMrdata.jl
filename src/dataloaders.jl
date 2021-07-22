@@ -1,12 +1,13 @@
 
+const DATA_DIR = joinpath(dirname(dirname(pathof(CDMrdata))),"data")
+
 function load_data(dataset_name)
     rda = dataset_name * ".rda"
-    basename = joinpath(dirname(dirname(pathof(CDMrdata))),"..","data")
     try 
-        data = load(joinpath(basename,rda))[ "data." * dataset_name]
+        data = load(joinpath(DATA_DIR,rda))[ "data." * dataset_name]
         return data 
     catch
-        data = load(joinpath(basename,rda))[dataset_name]
+        data = load(joinpath(DATA_DIR,rda))[dataset_name]
         return data 
     end
 end
