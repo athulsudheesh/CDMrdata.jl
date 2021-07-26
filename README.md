@@ -4,9 +4,9 @@ This package is a simplistic port of the data repo created by [@alexanderrobitzs
 
 ### Installation 
 
-As of July 22nd, this is still an un-registered package and hence to install this package, go to the package manager mode and run:
+To install this package, go to the package manager mode and run:
 ```julia
-add https://github.com/athulsudheesh/CDMrdata.jl
+add CDMrdata
 ```
 Once you have installed the package, you can use it just like any other Julia package 
 ```julia
